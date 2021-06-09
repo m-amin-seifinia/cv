@@ -1,0 +1,44 @@
+:root {
+  --primary-light: #62727b;
+  --primary: #3f525b;
+  --primary-dark: #172a32;
+
+  --secondary-light: #dbcebd;
+  --secondary: #a99d8d;
+  --secondary-dark: #7a6f60;
+
+  --aux-shade: #e63d14;
+}
+
+a {
+  color: inherit;
+}
+
+html {
+  font-family: "Open Sans", Helvetica, Arial;
+  scroll-behavior: smooth;
+}
+
+#background {
+  position: fixed;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  right: 0;
+  z-index: -1;
+
+  background: url(./img/bg-dark.jpg);
+  background-size: cover;
+  background-position: right top;
+}
+
+.hcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.vcenter {
+  display: flex;
+  align-items: center;
+}

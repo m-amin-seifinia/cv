@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+
+section {
+  width: 100vw;
+  max-width: 100%;
+}
+
+.section-title {
+  font-weight: bold !important;
+  color: var(--primary-dark);
+}
+
+.section-title-line {
+  height: 5px;
+  margin: auto;
+
+  background-color: var(--aux-shade);
+}
+
+.section-title-div {
+  position: absolute;
+}
+
+/* Home/Title */
+
+#home-sec {
+  height: 100vh;
+
+  text-align: justify;
+  text-justify: auto;
+}
+
+#title {
+  position: absolute;
+  bottom: 200px;
+  left: 200px;
+
+  opacity: 100%;
+  color: white;
+}
+
+#title-container {
+  height: 100%;
+}
+
+#first-name {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 3rem;
+}
+
+#last-name {
+  font-family: "Playfair Display";
+  font-size: 4rem;
+}
+
+#title-desc {
+  width: 20vw;
+
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 1rem;
+  text-align: justify;
+  text-justify: auto;
+}
+
+#down-arrow {
+  animation-name: swing-down;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes swing-down {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#down-arrow img {
+  position: absolute;
+  width: 50px;
+  bottom: 20px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#down-arrow img.not-hovered:hover {
+  opacity: 0;
+}
+
+/* About */
+
+#self-img {
+  position: relative;
+  width: 100%;
+  margin-bottom: auto;
+
+  border-radius: 50%;
+  border: 4px solid var(--aux-shade);
+
+  transition: all 0.5s ease-in-out;
+}
+
+#self-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 100px 10px var(--secondary-dark);
+  transition: all 0.5s ease-in-out;
+}
+
+#about-sec {
+  background: var(--primary-dark);
+}
+
+.minor-title {
+  font-weight: bold;
+}
+
+.about-minor-title {
+  color: white;
+}
+
+#about-content {
+  line-height: 1.8rem;
+  text-align: justify;
+  text-justify: auto;
+  color: var(--primary-light);
+}
+
+/* Education */
+
+#edu-sec {
+  text-align: justify;
+  background: var(--secondary-light);
+  color: var(--primary);
+}
+
+.edu-fac-name {
+  font-size: 1.5rem;
+}
+
+.edu-major-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.edu-content-minor-title {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.edu-divider {
+  height: 30px;
+}
+
+.edu-list ul li {
+  list-style: circle;
+  text-align: justify;
+}
+
+.thesis-sup-prof-link {
+  color: inherit;
+}
+
+/* Quote */
+
+.bg-dim {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  background-color: black;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.quote-section-title {
+  color: white;
+}
+
+.quote-container {
+  padding-left: 50px;
+  height: 200px;
+
+  font-family: "Playfair Display", cursive;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.quote-fade {
+  animation-name: quote-fade;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.quote-unfade {
+  animation-name: quote-unfade;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes quote-fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes quote-unfade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Skills */
+
+#skills-sec {
+  text-align: justify;
+  background: var(--primary);
+  color: #b0c2cc;
+}
+
+.skills-section-title {
+  color: white;
+}
+
+.skills-stars {
+  height: 20px;
+}
+
+.skill-category-title {
+  font-size: 1.2rem;
+}
+
+.skill-item-name {
+  font-size: 0.5rem;
+}
+
+/* Contact */
+
+#contact-sec {
+  background: var(--secondary);
+}
+
+.contact-section-title {
+  font-size: 2rem;
+}
+
+.contact-icon {
+  position: absolute;
+  width: 50px;
+
+  transition: all 0.2s linear;
+}
+
+.contact-icon:hover {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+
+.contact-icon-div {
+  position: relative;
+}
+
+.contact-details {
+  margin-bottom: 50px;
+}
+
+/* Footer */
+
+footer {
+  height: 200px;
+  color: var(--primary);
+  background: var(--primary-dark);
+}
+
+#up-arrow {
+  display: flex;
+  bottom: 0px;
+  animation-name: swing-up;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#up-arrow img {
+  position: absolute;
+  top: -25px;
+  width: 50px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#up-arrow img.not-hovered:hover {
+  opacity: 0;
+}
+
+#credits {
+  margin-top: auto;
+  text-decoration: none;
+}
+
+#copyright {
+  text-align: center;
+}
+
+@keyframes swing-up {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
